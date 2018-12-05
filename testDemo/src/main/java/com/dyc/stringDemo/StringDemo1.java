@@ -81,6 +81,7 @@ public class StringDemo1 {
 
     public static void switchSmall(){
         String str = "name";
+        System.out.println("在家里修改的方案");
         str = str.substring(0,1).toLowerCase() + str.substring(1,str.length());
         System.out.println(str);
     }
