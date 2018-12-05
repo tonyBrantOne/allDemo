@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/allDemo.iml" filepath="$PROJECT_DIR$/allDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blockingQueue/blockingQueue.iml" filepath="$PROJECT_DIR$/blockingQueue/blockingQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classLoaderDemo/classLoaderDemo.iml" filepath="$PROJECT_DIR$/classLoaderDemo/classLoaderDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/disruptorDemo/disruptorDemo.iml" filepath="$PROJECT_DIR$/disruptorDemo/disruptorDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicProxyDemo/dynamicProxyDemo.iml" filepath="$PROJECT_DIR$/dynamicProxyDemo/dynamicProxyDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileInputOutput/fileInputOutput.iml" filepath="$PROJECT_DIR$/fileInputOutput/fileInputOutput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genericDemo/genericDemo.iml" filepath="$PROJECT_DIR$/genericDemo/genericDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpClientDemo/httpClientDemo.iml" filepath="$PROJECT_DIR$/httpClientDemo/httpClientDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/innerClass/innerClass.iml" filepath="$PROJECT_DIR$/innerClass/innerClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonObjectDemo/jsonObjectDemo.iml" filepath="$PROJECT_DIR$/jsonObjectDemo/jsonObjectDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mqOnlineOptimise/mqOnlineOptimise.iml" filepath="$PROJECT_DIR$/mqOnlineOptimise/mqOnlineOptimise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisConnection/redisConnection.iml" filepath="$PROJECT_DIR$/redisConnection/redisConnection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflectDemo/reflectDemo.iml" filepath="$PROJECT_DIR$/reflectDemo/reflectDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiroDemo/shiroDemo.iml" filepath="$PROJECT_DIR$/shiroDemo/shiroDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/staticClassDemo/staticClassDemo.iml" filepath="$PROJECT_DIR$/staticClassDemo/staticClassDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testDemo/testDemo.iml" filepath="$PROJECT_DIR$/testDemo/testDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadRunnbleDemo/threadRunnbleDemo.iml" filepath="$PROJECT_DIR$/threadRunnbleDemo/threadRunnbleDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeperDemo/zookeeperDemo.iml" filepath="$PROJECT_DIR$/zookeeperDemo/zookeeperDemo.iml" />
+    </modules>
+  </component>
+</project>

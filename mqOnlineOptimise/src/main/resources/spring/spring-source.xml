@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+           				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd"
+           				default-autowire="byName">
+
+	<!--<bean id="jndi_dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName">
+			<value>java:comp/env/connectionPOOLPro</value>
+		</property>
+	</bean>-->
+	<bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
+	    <property name="slowSqlMillis" value="3000" />
+	    <property name="logSlowSql" value="true" />
+	</bean>
+
+    <bean id="wall-filter-config" class="com.alibaba.druid.wall.WallConfig" init-method="init">
+        <!-- 指定配置装载的目录  -->
+        <property name="dir" value="META-INF/druid/wall/mysql" />
+        <property name="truncateAllow" value="false" />
+        <property name="createTableAllow" value="false" />
+        <property name="alterTableAllow" value="false" />
+        <property name="dropTableAllow" value="false" />
+        <property name="deleteWhereNoneCheck" value="true" />
+        <property name="updateWhereNoneCheck" value="true" />
+    </bean>
+    <bean id="wall-filter" class="com.alibaba.druid.wall.WallFilter">
+        <property name="config" ref="wall-filter-config" />
+    </bean>
+
+	<bean id="log-filter" class="com.alibaba.druid.filter.logging.Slf4jLogFilter">
+	    <property name="resultSetLogEnabled" value="false" />
+	    <property name="statementExecutableSqlLogEnable" value="true" />
+	</bean>
+
+    <bean id="config-filter" class="com.alibaba.druid.filter.config.ConfigFilter"/>
+    
+    <!--  <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${database.url}" />
+        <property name="username" value="${database.username}" />
+        <property name="password" value="${database.password}" />
+        <property name="initialSize" value="${conn.initial.size}" />
+        <property name="minIdle" value="${conn.min.idle}" /> 
+        <property name="maxActive" value="${conn.max.active}" />
+        <property name="maxWait" value="${conn.max.wait}" />
+        <property name="timeBetweenEvictionRunsMillis" value="${conn.time.between.eviction.runs.millis}" />
+        <property name="minEvictableIdleTimeMillis" value="${conn.min.evictable.idle.time.millis}" />
+        <property name="validationQuery" value="${database.test.connection}" />
+        <property name="testWhileIdle" value="${conn.test.while.idle}" />
+        <property name="testOnBorrow" value="${conn.test.on.borrow}" />
+        <property name="testOnReturn" value="${conn.test.on.return}" />
+        <property name="poolPreparedStatements" value="${conn.ps.cache.enable}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${conn.ps.cache.size}" />
+        <property name="connectionProperties" value="config.decrypt=${pwd.config.decrypt}" />
+        <property name="removeAbandoned" value="true" />
+        <property name="removeAbandonedTimeout" value="180" />
+        <property name="logAbandoned" value="true" />
+	    <property name="proxyFilters">
+	        <list>
+                <ref bean="stat-filter"/>
+                <ref bean="wall-filter"/>
+                <ref bean="log-filter"/>
+                <ref bean="config-filter"/>
+	        </list>
+	    </property>
+    </bean> -->
+
+
+      <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+       <property name="url" value="${dataSource.url}" />
+       <property name="username" value="manager" />
+       <property name="password" value="manager" />
+       <property name="initialSize" value="1" />
+       <property name="minIdle" value="1" />
+       <property name="maxActive" value="3" />
+       <property name="maxWait" value="60000" />
+       <property name="timeBetweenEvictionRunsMillis" value="60000" />
+       <property name="minEvictableIdleTimeMillis" value="60000" />
+       <property name="validationQuery" value="SELECT 1" />
+       <property name="testWhileIdle" value="true" />
+       <property name="testOnBorrow" value="false" />
+       <property name="testOnReturn" value="false" />
+       <property name="poolPreparedStatements" value="false" />
+       <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+       <property name="connectionProperties" value="config.decrypt=false" />
+       <property name="removeAbandoned" value="true" />
+       <property name="removeAbandonedTimeout" value="180" />
+       <property name="logAbandoned" value="true" />
+       <property name="proxyFilters">
+           <list>
+               <ref bean="stat-filter"/>
+               <ref bean="wall-filter"/>
+               <ref bean="log-filter"/>
+               <ref bean="config-filter"/>
+           </list>
+       </property>
+   </bean>
+    
+</beans>

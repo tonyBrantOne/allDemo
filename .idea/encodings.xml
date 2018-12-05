@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/blockingQueue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/classLoaderDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/disruptorDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamicProxyDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fileInputOutput" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/genericDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/httpClientDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/innerClass" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jsonObjectDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mqOnlineOptimise" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisConnection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reflectDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shiroDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/staticClassDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/threadRunnbleDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/websocket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperDemo" charset="UTF-8" />
+  </component>
+</project>

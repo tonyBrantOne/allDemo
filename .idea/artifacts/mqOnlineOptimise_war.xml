@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mqOnlineOptimise:war">
+    <output-path>$PROJECT_DIR$/mqOnlineOptimise/target</output-path>
+    <root id="archive" name="mqOnlineOptimise.war">
+      <element id="artifact" artifact-name="mqOnlineOptimise:war exploded" />
+    </root>
+  </artifact>
+</component>
