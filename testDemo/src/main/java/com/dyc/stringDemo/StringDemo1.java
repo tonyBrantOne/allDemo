@@ -78,4 +78,10 @@ public class StringDemo1 {
         str = str.substring(0,1).toUpperCase() + str.substring(1,str.length());
         System.out.println(str);
     }
+
+    public static void switchSmall(){
+        String str = "name";
+        str = str.substring(0,1).toLowerCase() + str.substring(1,str.length());
+        System.out.println(str);
+    }
 }
