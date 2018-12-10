@@ -26,6 +26,8 @@
       <module>blockingQueue</module>
       <module>staticClassDemo</module>
       <module>reflectDemo</module>
+      <module>redisDemo</module>
+      <module>designModeDemo</module>
   </modules>
 
   <name>allDemo</name>

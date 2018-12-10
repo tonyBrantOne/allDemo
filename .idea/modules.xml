@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/allDemo.iml" filepath="$PROJECT_DIR$/allDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/blockingQueue/blockingQueue.iml" filepath="$PROJECT_DIR$/blockingQueue/blockingQueue.iml" />
       <module fileurl="file://$PROJECT_DIR$/classLoaderDemo/classLoaderDemo.iml" filepath="$PROJECT_DIR$/classLoaderDemo/classLoaderDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designModeDemo/designModeDemo.iml" filepath="$PROJECT_DIR$/designModeDemo/designModeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/disruptorDemo/disruptorDemo.iml" filepath="$PROJECT_DIR$/disruptorDemo/disruptorDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamicProxyDemo/dynamicProxyDemo.iml" filepath="$PROJECT_DIR$/dynamicProxyDemo/dynamicProxyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileInputOutput/fileInputOutput.iml" filepath="$PROJECT_DIR$/fileInputOutput/fileInputOutput.iml" />
@@ -14,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/jsonObjectDemo/jsonObjectDemo.iml" filepath="$PROJECT_DIR$/jsonObjectDemo/jsonObjectDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mqOnlineOptimise/mqOnlineOptimise.iml" filepath="$PROJECT_DIR$/mqOnlineOptimise/mqOnlineOptimise.iml" />
       <module fileurl="file://$PROJECT_DIR$/redisConnection/redisConnection.iml" filepath="$PROJECT_DIR$/redisConnection/redisConnection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisDemo/redisDemo.iml" filepath="$PROJECT_DIR$/redisDemo/redisDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflectDemo/reflectDemo.iml" filepath="$PROJECT_DIR$/reflectDemo/reflectDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiroDemo/shiroDemo.iml" filepath="$PROJECT_DIR$/shiroDemo/shiroDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/staticClassDemo/staticClassDemo.iml" filepath="$PROJECT_DIR$/staticClassDemo/staticClassDemo.iml" />

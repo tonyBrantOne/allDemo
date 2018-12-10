@@ -16,7 +16,8 @@ public class StringDemo1 {
     public static void main(String[] args) throws ParseException {
      //   replaceTest();
      //   spiltLikeJson();
-        switchBig();
+    //    switchBig();
+        testNullDate();
     }
 
     public static void test1(){
@@ -85,4 +86,14 @@ public class StringDemo1 {
         str = str.substring(0,1).toLowerCase() + str.substring(1,str.length());
         System.out.println(str);
     }
+
+    /**
+     * 测试null类型数据
+     */
+    public static void testNullDate(){
+        String str = "null";
+        String str3 = null;
+        System.out.println(str == null);
+    }
+
 }
