@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.FutureTask;
 
 /**
  * @Auther: tony_jaa
@@ -25,12 +26,29 @@ public class RoleController extends BaseController{
     }
 
     public static void main(String[] args) throws Exception {
-        applicationContaxt.get(RoleController.class.getName()).startMain();
+    //    applicationContaxt.get(RoleController.class.getName()).startMain();
+        applicationContaxt.get(RoleController.class.getName()).startMainUnWaitting();
     }
 
+    /**
+     * 有返回值，如果需要用到返回值，则调用futureTask.get()获取，要注意这个方法有阻塞。
+     * @throws Exception
+     */
     public void startMain() throws Exception {
-        BaseDTO baseDTO = ThreadPoolUtil.execute(this,"addRole",new RoleDTO());
-        System.out.println(baseDTO);
+        FutureTask<RoleDTO> futureTask = ThreadPoolUtil.execute(this,"addRole",new RoleDTO(),RoleDTO.class);
+        System.out.println("开始阻塞");
+        System.out.println(futureTask.get());
+        System.out.println("结束阻塞");
+    }
+
+    /**
+     * 无返回值，适合直接把数据异步保存到redis中
+     * @throws Exception
+     */
+    public void startMainUnWaitting() throws Exception {
+        FutureTask<RoleDTO> futureTask = ThreadPoolUtil.execute(this,"addRole",new RoleDTO(),RoleDTO.class);
+        System.out.println("开始阻塞");
+        System.out.println("结束阻塞");
     }
 
     public RoleDTO addRole( RoleDTO roleDTO ){
