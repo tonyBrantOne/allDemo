@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="blockingQueue" />
         <module name="classLoaderDemo" />
+        <module name="designModeDemo" />
         <module name="disruptorDemo" />
         <module name="dynamicProxyDemo" />
         <module name="fileInputOutput" />
@@ -16,6 +17,7 @@
         <module name="jsonObjectDemo" />
         <module name="mqOnlineOptimise" />
         <module name="redisConnection" />
+        <module name="redisDemo" />
         <module name="reflectDemo" />
         <module name="shiroDemo" />
         <module name="staticClassDemo" />
@@ -29,6 +31,7 @@
       <module name="allDemo" target="1.7" />
       <module name="blockingQueue" target="1.7" />
       <module name="classLoaderDemo" target="1.7" />
+      <module name="designModeDemo" target="1.7" />
       <module name="disruptorDemo" target="1.7" />
       <module name="dynamicProxyDemo" target="1.7" />
       <module name="fileInputOutput" target="1.7" />
@@ -38,7 +41,8 @@
       <module name="jsonObjectDemo" target="1.7" />
       <module name="mqOnlineOptimise" target="1.7" />
       <module name="redisConnection" target="1.7" />
-      <module name="reflectDemo" target="1.7" />
+      <module name="redisDemo" target="1.7" />
+      <module name="reflectDemo" target="8" />
       <module name="shiroDemo" target="1.7" />
       <module name="staticClassDemo" target="1.7" />
       <module name="testDemo" target="1.7" />

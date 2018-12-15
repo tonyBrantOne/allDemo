@@ -1,4 +1,4 @@
-package com.dyc.newFixedThreadPoolDemo;/**
+package com.dyc.ThreadPool.newFixedThreadPoolDemo;/**
  * @Auther: tony_jaa
  * @Date: 2018/10/12 16:40
  * @Description:
