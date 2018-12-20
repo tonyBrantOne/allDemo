@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="annotationDemo" />
         <module name="blockingQueue" />
         <module name="classLoaderDemo" />
         <module name="designModeDemo" />
@@ -23,12 +24,15 @@
         <module name="staticClassDemo" />
         <module name="testDemo" />
         <module name="threadRunnbleDemo" />
+        <module name="variableLifeCycleDemo" />
         <module name="websocket" />
+        <module name="webSpringMvcDemo" />
         <module name="zookeeperDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="allDemo" target="1.7" />
+      <module name="annotationDemo" target="1.7" />
       <module name="blockingQueue" target="1.7" />
       <module name="classLoaderDemo" target="1.7" />
       <module name="designModeDemo" target="1.7" />
@@ -47,7 +51,9 @@
       <module name="staticClassDemo" target="1.7" />
       <module name="testDemo" target="1.7" />
       <module name="threadRunnbleDemo" target="1.7" />
+      <module name="variableLifeCycleDemo" target="1.7" />
       <module name="websocket" target="1.7" />
+      <module name="webSpringMvcDemo" target="1.7" />
       <module name="zookeeperDemo" target="1.7" />
     </bytecodeTargetLevel>
   </component>

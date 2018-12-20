@@ -28,6 +28,8 @@
       <module>reflectDemo</module>
       <module>redisDemo</module>
       <module>designModeDemo</module>
+      <module>annotationDemo</module>
+      <module>variableLifeCycleDemo</module>
   </modules>
 
   <name>allDemo</name>

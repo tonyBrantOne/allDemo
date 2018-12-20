@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/mqOnlineOptimise" />
     <file type="web" url="file://$PROJECT_DIR$/threadPoolDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/webSpringMvcDemo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -10,6 +11,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/classLoaderDemo/pom.xml" />
         <option value="$PROJECT_DIR$/redisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/webSpringMvcDemo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

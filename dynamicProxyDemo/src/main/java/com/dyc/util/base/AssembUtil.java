@@ -1,8 +1,4 @@
-package com.dyc.util.base;/**
- * @Auther: tony_jaa
- * @Date: 2018/7/23 20:30
- * @Description:
- */
+package com.dyc.util.base;
 
 import com.dyc.model.User;
 import com.dyc.util.EventUtil;

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotationDemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/blockingQueue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/classLoaderDemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/designModeDemo" charset="UTF-8" />
@@ -20,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/staticClassDemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testDemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/threadRunnbleDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/variableLifeCycleDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webSpringMvcDemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/websocket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeperDemo" charset="UTF-8" />
   </component>
