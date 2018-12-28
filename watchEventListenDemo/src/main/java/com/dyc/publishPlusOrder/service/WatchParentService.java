@@ -10,5 +10,4 @@ package com.dyc.publishPlusOrder.service;/**
  * @Description:
  */
 public interface WatchParentService {
-     void excute();
 }

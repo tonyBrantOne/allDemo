@@ -10,8 +10,4 @@ import com.dyc.publishPlusOrder.service.WatchService;
  */
 public abstract class AbstactWatchListen< T extends MonitorDTO > implements WatchService<T> {
 
-    @Override
-    public void excute() {
-
-    }
 }

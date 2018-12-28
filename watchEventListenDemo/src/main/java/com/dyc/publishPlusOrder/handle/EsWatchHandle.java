@@ -6,24 +6,16 @@ package com.dyc.publishPlusOrder.handle;
  */
 
 import com.dyc.publishPlusOrder.listen.AbstactWatchListen;
+import com.dyc.publishPlusOrder.model.MonitorDTO;
 import com.dyc.publishPlusOrder.model.esModel.EsMonitorDTO;
-import com.dyc.publishPlusOrder.model.redisModel.RedisMonitorDTO;
+import com.dyc.publishPlusOrder.service.WatchService;
 
 /**
  * @Auther: tony_jaa
  * @Date: 2018/12/27 19:36
  * @Description:
  */
-public class EsWatchHandle extends AbstactWatchListen<EsMonitorDTO> {
+public interface EsWatchHandle< T extends MonitorDTO> extends WatchService<T> {
 
-    @Override
-    public void connectExcessWarnning(EsMonitorDTO esMonitorDTO) {
-        System.out.println("EsRedis连接数超时");
-    }
 
-    @Override
-    public void connectReject(EsMonitorDTO esMonitorDTO) {
-        System.out.println("Es连接数超时");
-
-    }
 }
