@@ -18,11 +18,11 @@ public class RedisWatchHandle extends AbstactWatchListen<RedisMonitorDTO> {
 
     @Override
     public void connectExcessWarnning(RedisMonitorDTO redisMonitorDTO) {
-
+        System.out.println("Redis连接数过多");
     }
 
     @Override
     public void connectReject(RedisMonitorDTO redisMonitorDTO) {
-
+        System.out.println("Redis连接数超时");
     }
 }

@@ -17,11 +17,11 @@ public class PostgresqlWatchHandle extends AbstactWatchListen<PostgresqlMonitorD
 
     @Override
     public void connectExcessWarnning(PostgresqlMonitorDTO postgresqlMonitorDTO) {
-
+        System.out.println("数据库连接数过多");
     }
 
     @Override
     public void connectReject(PostgresqlMonitorDTO postgresqlMonitorDTO) {
-
+        System.out.println("数据库连接数超时");
     }
 }

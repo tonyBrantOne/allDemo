@@ -18,11 +18,12 @@ public class EsWatchHandle extends AbstactWatchListen<EsMonitorDTO> {
 
     @Override
     public void connectExcessWarnning(EsMonitorDTO esMonitorDTO) {
-
+        System.out.println("EsRedis连接数超时");
     }
 
     @Override
     public void connectReject(EsMonitorDTO esMonitorDTO) {
+        System.out.println("Es连接数超时");
 
     }
 }
