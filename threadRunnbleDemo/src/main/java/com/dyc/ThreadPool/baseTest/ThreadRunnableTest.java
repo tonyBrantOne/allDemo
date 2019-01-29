@@ -15,7 +15,9 @@ public class ThreadRunnableTest {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.println("kkk");
+//                while (true){
+//                    System.out.println("kkk");
+//                }
             }
         });
         thread.start();

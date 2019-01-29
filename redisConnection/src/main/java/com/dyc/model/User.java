@@ -7,7 +7,7 @@ package com.dyc.model;
  */
 public class User {
     private Long id;
-    private String name;
+    private String name = "567";
     private String pwd;
     private String readFlag;
 
