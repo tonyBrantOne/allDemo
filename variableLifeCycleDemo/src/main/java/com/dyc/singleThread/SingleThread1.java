@@ -24,7 +24,7 @@ public class SingleThread1 {
 
 
     class MyRunnable implements Runnable{
-        List<UserDTO> list = new ArrayList<>();
+   //     List<UserDTO> list = new ArrayList<>();
         @Override
         public void run() {
             test();
@@ -32,11 +32,11 @@ public class SingleThread1 {
 
         public void test(){
             try {
-                if ( true ){
-                    UserDTO userDTO = new UserDTO();
-                    list.add(userDTO);
-                    System.out.println(Thread.currentThread().getName());
-                }
+//                if ( true ){
+//                    UserDTO userDTO = new UserDTO();
+//                    list.add(userDTO);
+//                    System.out.println(Thread.currentThread().getName());
+//                }
             }finally {
                 test();
             }

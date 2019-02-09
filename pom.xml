@@ -30,6 +30,10 @@
       <module>designModeDemo</module>
       <module>annotationDemo</module>
       <module>variableLifeCycleDemo</module>
+      <module>watchEventListenDemo</module>
+      <module>ioFileDemo</module>
+      <module>jdbcDemo</module>
+      <module>javaMainDemo</module>
   </modules>
 
   <name>allDemo</name>

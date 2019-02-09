@@ -1,4 +1,5 @@
-package com.dyc;/**
+package com.dyc;
+/**
  * @Auther: tony_jaa
  * @Date: 2018/8/19 16:36
  * @Description:
@@ -26,17 +27,22 @@ import java.util.Set;
 public class Boss11Test {
     private static final Integer PORT = 6339;
     private static final String GAME_BOX = "game_box";
-    private static final String HOST = "192.168.0.11";
+    private static final String HOST = "192.168.0.12";
+    private JedisCluster jedis;
 
-    public static void main(String[] args) throws UnknownHostException {
-        JedisCluster jedis = getRedisClute();
+    public static void main(String[] args) throws Exception {
     //    Set<String> set = jedis.k("publish/info/*");
     //    System.out.println(set);
     //   for( String key : set ){
 //            byte[] bytes = jedis.get("publish/file/package:jasper.jar:".getBytes());
 //            System.out.println(bytes);
     //    }
-        test1();
+   //      test1();
+        new Boss11Test().startMain();
+    }
+
+    public void startMain() throws Exception{
+        test2();
     }
 
     public static Set<String> test1( JedisCluster  jedisCluster){
@@ -71,6 +77,22 @@ public class Boss11Test {
         server.setServerName(hostName);
         String jsonStr = JSON.toJSONString(server);
         String l = jedis.set("publish/info/server:"+hostName+":",jsonStr);
+    }
+
+
+    public void test2() throws Exception {
+        String key = "paramMenu_:userId58menuUrl_:monitor/datebaseMonitor/list.html";
+        for (int i = 0; i < 6; i++) {
+            JedisCluster jedisCluster = getRedisClute(HOST,6399);
+            System.out.println(jedisCluster.del(key));
+        }
+    }
+
+    public static JedisCluster getRedisClute( String host,int port){
+        HostAndPort hostAndPort = new HostAndPort(host, port);
+        Set<HostAndPort> hostAndPortSet = new HashSet<>();
+        hostAndPortSet.add(hostAndPort);
+        return new JedisCluster(hostAndPortSet);
     }
 
 
